@@ -94,8 +94,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01436317, y: -0.02872634}
-  m_Size: {x: 0.59336066, y: 0.7558261}
+  m_Offset: {x: -0.0005047393, y: -0.022567037}
+  m_Size: {x: 0.62107724, y: 0.81741875}
   m_Direction: 0
 --- !u!114 &8717110834427848378
 MonoBehaviour:
@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4722293029776552697}
+  rbSprite: {fileID: 0}
   moveSpeed: 25
   boostScore: 5
 --- !u!1 &2630288122287055723

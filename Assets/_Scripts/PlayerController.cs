@@ -5,28 +5,43 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private SpriteRenderer rbSprite;
+    [SerializeField] private GameObject pause;
     [SerializeField] private float moveSpeed;
-    private Vector3 touchPos;
     private Vector3 direction;
     public float boostScore;
+    private Vector3 touchPosition;
+
     private void Update()
     {
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            touchPos = Camera.main.ScreenToWorldPoint(touch.position);
-            touchPos.z = 0;
-            if (Vector2.Distance(touchPos, transform.position) < .5f)
+        flip();
+
+            if (Input.touchCount > 0)
             {
-                direction = touchPos - transform.position;
+           
+            Touch touch = Input.GetTouch(0);
+                touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+                touchPosition.z = 0;
+            if(Vector2.Distance(touchPosition, pause.transform.position) > 0.5) 
+            {
+
+                direction = (touchPosition - transform.position);
                 rb.velocity = new Vector2(direction.x, direction.y) * moveSpeed;
 
                 if (touch.phase == TouchPhase.Ended)
                 {
                     rb.velocity = Vector2.zero;
                 }
+
+
             }
-        }
+
+                    
+
+                
+            
+           
+       }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -42,4 +57,17 @@ public class PlayerController : MonoBehaviour
             GameManager.Instance.IncreaseScore(boostScore);
         }
     }
+
+    private void flip()
+    {
+        if(transform.position.x < 0)
+        {
+            rbSprite.flipX = true;
+        }
+        else
+        {
+            rbSprite.flipX = false;
+        }
+    }
+    
 }

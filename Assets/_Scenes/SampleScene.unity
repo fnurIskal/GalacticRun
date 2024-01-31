@@ -734,6 +734,11 @@ MonoBehaviour:
   - {fileID: 3918733726162415547, guid: 499fde4e954387443b4ace9d9a62d8a3, type: 3}
   - {fileID: 3918733726162415547, guid: 499fde4e954387443b4ace9d9a62d8a3, type: 3}
   - {fileID: 1721079563624342300, guid: b3c0a6ea7ca3a31428fcc311a985199f, type: 3}
+--- !u!212 &949862105 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1315027178302673239, guid: 459b2c2c3ca72114da784eaa8d65469b, type: 3}
+  m_PrefabInstance: {fileID: 5711440830296600262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1028595495
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,11 +872,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028595495}
   m_CullTransparentMesh: 1
---- !u!50 &1068061456 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 4722293029776552697, guid: 459b2c2c3ca72114da784eaa8d65469b, type: 3}
-  m_PrefabInstance: {fileID: 5711440830296600262}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1250910319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,11 +1675,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6408814433038180483, guid: 459b2c2c3ca72114da784eaa8d65469b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.05
+      value: 1.197
       objectReference: {fileID: 0}
     - target: {fileID: 6408814433038180483, guid: 459b2c2c3ca72114da784eaa8d65469b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.76
+      value: 3.521
       objectReference: {fileID: 0}
     - target: {fileID: 6408814433038180483, guid: 459b2c2c3ca72114da784eaa8d65469b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1758,13 +1758,13 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717110834427848378, guid: 459b2c2c3ca72114da784eaa8d65469b, type: 3}
-      propertyPath: rb
+      propertyPath: pause
       value: 
-      objectReference: {fileID: 1068061456}
+      objectReference: {fileID: 645084498}
     - target: {fileID: 8717110834427848378, guid: 459b2c2c3ca72114da784eaa8d65469b, type: 3}
-      propertyPath: boostScore
-      value: 5
-      objectReference: {fileID: 0}
+      propertyPath: rbSprite
+      value: 
+      objectReference: {fileID: 949862105}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7488041301005950557, guid: 459b2c2c3ca72114da784eaa8d65469b, type: 3}
