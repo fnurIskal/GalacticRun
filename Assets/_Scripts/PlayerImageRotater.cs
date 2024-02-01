@@ -9,6 +9,10 @@ public class PlayerImageRotater : MonoBehaviour
     private int target = 1;
     public float speed = 2f;
     public float rotationSpeed = 60f;
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
     void Update()
     {
         transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);

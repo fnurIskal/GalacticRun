@@ -155,6 +155,8 @@ MonoBehaviour:
   currentScore: 0
   highscore: 0
   volume: 1
+  musicOn: 1
+  soundOn: 1
 --- !u!4 &12563530
 Transform:
   m_ObjectHideFlags: 0
@@ -1490,7 +1492,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 55983392}
         m_TargetAssemblyTypeName: StartMenuManager, Assembly-CSharp
-        m_MethodName: SoundOn
+        m_MethodName: Sound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1754,7 +1756,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 55983392}
         m_TargetAssemblyTypeName: StartMenuManager, Assembly-CSharp
-        m_MethodName: MusicOn
+        m_MethodName: Music
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2215,7 +2217,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 55983392}
         m_TargetAssemblyTypeName: StartMenuManager, Assembly-CSharp
-        m_MethodName: SoundOff
+        m_MethodName: Sound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2688,7 +2690,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 55983392}
         m_TargetAssemblyTypeName: StartMenuManager, Assembly-CSharp
-        m_MethodName: MusicOff
+        m_MethodName: Music
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

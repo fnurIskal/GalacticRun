@@ -24,7 +24,51 @@ public class StartMenuManager : MonoBehaviour
     private void Start()
     {
         highScoreText.text = GameManager.Instance.highscore.ToString();
+        volumeSlider.value = GameManager.Instance.volume;
         volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
+        if (GameManager.Instance.musicOn)
+        {
+            musicOn.SetActive(true);
+            musicOff.SetActive(false);
+        }
+        else
+        {
+            musicOn.SetActive(false);
+            musicOff.SetActive(true);
+        }
+        if (GameManager.Instance.soundOn)
+        {
+            soundOn.SetActive(true);
+            soundOff.SetActive(false);
+        }
+        else
+        {
+            soundOn.SetActive(false);
+            soundOff.SetActive(true);
+        }
+    }
+    private void Update()
+    {
+        if (GameManager.Instance.musicOn)
+        {
+            musicOn.SetActive(true);
+            musicOff.SetActive(false);
+        }
+        else
+        {
+            musicOn.SetActive(false);
+            musicOff.SetActive(true);
+        }
+        if (GameManager.Instance.soundOn)
+        {
+            soundOn.SetActive(true);
+            soundOff.SetActive(false);
+        }
+        else
+        {
+            soundOn.SetActive(false);
+            soundOff.SetActive(true);
+        }
     }
     public void PlayGame()
     {
@@ -55,25 +99,13 @@ public class StartMenuManager : MonoBehaviour
         highscore.SetActive(true);
         settingsScreen.SetActive(false);
     }
-    public void SoundOn()
+    public void Sound()
     {
-        soundOn.SetActive(false);
-        soundOff.SetActive(true);
+        GameManager.Instance.ChangeSound();
     }
-    public void SoundOff()
+    public void Music()
     {
-        soundOn.SetActive(true);
-        soundOff.SetActive(false);
-    }
-    public void MusicOn()
-    {
-        musicOn.SetActive(false);
-        musicOff.SetActive(true);
-    }
-    public void MusicOff()
-    {
-        musicOn.SetActive(true);
-        musicOff.SetActive(false);
+        GameManager.Instance.ChangeMusic();
     }
     private void OnVolumeChanged(float value)
     {
