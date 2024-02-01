@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40a60fa80fb573f40a856d13797033fb
-      internalID: -1827729453
+      spriteID: c18b8eeeccd09bf41819fbefb3e31ec3
+      internalID: 570823318
       vertices: []
       indices: 
       edges: []
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ee3c375958a6d4ebd7bd460fd8b285
-      internalID: 957007737
+      spriteID: 56fedcc8bc8b4d940866edbf8299dd28
+      internalID: -1401669038
       vertices: []
       indices: 
       edges: []
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe548573198c3f5478ca9ec6d8bf1a28
-      internalID: -1920036956
+      spriteID: d8cc13f28ebace842b538cc886d760ec
+      internalID: 1043067291
       vertices: []
       indices: 
       edges: []
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3700f0a6e87eb34c9e7373526e72d2f
-      internalID: 1576401156
+      spriteID: 25165011cc856384782f8352b5e3b2a0
+      internalID: 754798542
       vertices: []
       indices: 
       edges: []
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac32ca8a796f8fb4c96b3708a9b831d9
-      internalID: -1413699469
+      spriteID: 8d0eb7ab0f0c2cb4d961a27777c3a037
+      internalID: 1725145990
       vertices: []
       indices: 
       edges: []
@@ -242,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f61665218d024a3479ddb77a10b25e50
-      internalID: 1696228489
+      spriteID: b6a6ca34b8d3209438f67a92f96970ce
+      internalID: 116060852
       vertices: []
       indices: 
       edges: []
@@ -251,7 +251,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 099d1381105d52148ae255deadfaffdb
     internalID: 0
     vertices: []
     indices: 
@@ -259,12 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      waitScene_0: -1827729453
-      waitScene_1: 957007737
-      waitScene_2: -1920036956
-      waitScene_3: 1576401156
-      waitScene_4: -1413699469
-      waitScene_5: 1696228489
+      waitScene_0: 570823318
+      waitScene_1: -1401669038
+      waitScene_2: 1043067291
+      waitScene_3: 754798542
+      waitScene_4: 1725145990
+      waitScene_5: 116060852
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
