@@ -12,7 +12,7 @@ public class LoadingScene : MonoBehaviour
         time += Time.deltaTime;
         if(time >= 3)
         {
-           SceneManager.LoadScene("SampleScene");
+           SceneManager.LoadScene("StartMenu");
         }
     }
 }

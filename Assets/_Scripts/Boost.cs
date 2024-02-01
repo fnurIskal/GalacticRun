@@ -16,6 +16,7 @@ public class Boost : MonoBehaviour
     }
     private void Update()
     {
+        transform.Rotate(0f, 100 * Time.deltaTime, 0f, Space.Self);
         timer += Time.deltaTime;
         if (timer > stayAliveTime)
         {
