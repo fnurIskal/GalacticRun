@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4aa02648c575d4a45bdbb1c7a03bf1fe
+guid: ce3f6a483ed3533459668f01ea5c1b31
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 35
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: waitScene_0
+      name: meteorAnim_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,41 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40a60fa80fb573f40a856d13797033fb
-      internalID: -1827729453
+      spriteID: 595952214e8d026479c43f861d4d0777
+      internalID: -585146881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waitScene_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27ee3c375958a6d4ebd7bd460fd8b285
-      internalID: 957007737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waitScene_2
+      name: meteorAnim_1
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 64
-        height: 64
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,41 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe548573198c3f5478ca9ec6d8bf1a28
-      internalID: -1920036956
+      spriteID: 1afdc3da9e6b43241a8164f0c99cb7e7
+      internalID: 587380941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waitScene_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3700f0a6e87eb34c9e7373526e72d2f
-      internalID: 1576401156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waitScene_4
+      name: meteorAnim_2
       rect:
         serializedVersion: 2
         x: 256
         y: 0
-        width: 64
-        height: 64
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,29 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac32ca8a796f8fb4c96b3708a9b831d9
-      internalID: -1413699469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waitScene_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f61665218d024a3479ddb77a10b25e50
-      internalID: 1696228489
+      spriteID: 8df29c7f6d237a543822681e7aba55e8
+      internalID: -1866854922
       vertices: []
       indices: 
       edges: []
@@ -259,12 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      waitScene_0: -1827729453
-      waitScene_1: 957007737
-      waitScene_2: -1920036956
-      waitScene_3: 1576401156
-      waitScene_4: -1413699469
-      waitScene_5: 1696228489
+      meteorAnim_0: -585146881
+      meteorAnim_1: 587380941
+      meteorAnim_2: -1866854922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
