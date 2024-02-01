@@ -17,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/SampleScene.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
-  - enabled: 0
-    path: Assets/_Scenes/PauseScene.unity
-    guid: b851b8310740a6b4b861913ba98a6720
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: fa4fc4a9400e7be418e3a90efa307b01, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a08419da941c04046a1cd870a5ced468, type: 2}

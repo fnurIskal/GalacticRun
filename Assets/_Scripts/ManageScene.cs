@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ManageScene : MonoBehaviour
 {
-    [SerializeField] private GameObject shadowImage;
+    [SerializeField] private GameObject shadowImg;
     private GameObject[] enemies;
     private GameObject[] boosts;
     private GameObject[] magnets;
@@ -39,7 +39,7 @@ public class ManageScene : MonoBehaviour
             magnet.SetActive(false);
         }
         player.SetActive(false);
-        shadowImage.SetActive(true);
+        shadowImg.SetActive(true);
         Time.timeScale = 0f;
     }
     public void ResumeGame()
@@ -57,8 +57,11 @@ public class ManageScene : MonoBehaviour
             magnet.SetActive(true);
         }
         player.SetActive(true);
-
-        shadowImage.SetActive(false);
+        shadowImg.SetActive(false);
         Time.timeScale = 1f;
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("StartMenu");
     }
 }

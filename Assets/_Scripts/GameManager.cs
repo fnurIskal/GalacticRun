@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     public float currentScore = 0f;
     public float highscore = 0f;
+    public float volume = 1f;
     public void IncreaseScore(float score)
     {
         currentScore += score;
@@ -28,5 +29,9 @@ public class GameManager : MonoBehaviour
     public void ResetScore()
     {
         currentScore = 0f;
+    }
+    public void SetVolume(float value)
+    {
+        volume = value;
     }
 }

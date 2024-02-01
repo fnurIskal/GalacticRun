@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 public class LoadingScene : MonoBehaviour
 {
     private float time=0;
-  
     void Update()
     {
         time += Time.deltaTime;
-        if(time >= 3)
+        if(time >= 1.5f)
         {
-           SceneManager.LoadScene("StartMenu");
+            time = 0;
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }
