@@ -10,6 +10,12 @@ public class Magnet : MonoBehaviour
     private int count = 0;
     private GameObject[] boosts;
     private GameObject[] enemies;
+
+    private void Update()
+    {
+        transform.Rotate(0f, 100 * Time.deltaTime, 0f, Space.Self);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

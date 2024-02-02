@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player");
+        Time.timeScale = 1.0f;
         
     }
     private void Update()
@@ -25,8 +26,9 @@ public class Enemy : MonoBehaviour
             GameManager.Instance.IncreaseScore(enemyScore);
             hasScored = true;
         }
-        if (timer > stayAliveTime)
+        if (timer >= stayAliveTime)
         {
+            Debug.Log("lll");
             timer = 0;
             Destroy(gameObject);
         }

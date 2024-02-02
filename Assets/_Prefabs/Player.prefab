@@ -111,7 +111,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4722293029776552697}
   rbSprite: {fileID: 0}
+  pause: {fileID: 0}
   moveSpeed: 25
+  boostSound: {fileID: 8300000, guid: f908d3c4b2b741e44ae5d7593e92babd, type: 3}
   boostScore: 5
 --- !u!1 &2630288122287055723
 GameObject:

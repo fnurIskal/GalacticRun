@@ -8,9 +8,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private SpriteRenderer rbSprite;
     [SerializeField] private GameObject pause;
     [SerializeField] private float moveSpeed;
+    [SerializeField] public AudioClip boostSound;
+    private AudioSource audioSource;
     private Vector3 direction;
     public float boostScore;
     private Vector3 touchPosition;
+
 
     private void Update()
     {
@@ -33,13 +36,7 @@ public class PlayerController : MonoBehaviour
                     rb.velocity = Vector2.zero;
                 }
 
-
-            }
-
-                    
-
-                
-            
+            }    
            
        }
     }
@@ -53,6 +50,8 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Boost"))
         {
+            audioSource.clip = boostSound;
+            audioSource.Play();
             Destroy(collision.gameObject);
             GameManager.Instance.IncreaseScore(boostScore);
         }
