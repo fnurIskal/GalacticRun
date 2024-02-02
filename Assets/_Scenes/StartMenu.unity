@@ -409,8 +409,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4c221764fc2d45830bd22b7870eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnables:
-  - {fileID: 8904224290215163298, guid: 7497a539865db544a81fe897313634c9, type: 3}
+  enemy: {fileID: 0}
+  powerUp: {fileID: 0}
+  magnet: {fileID: 0}
+  maxX: 0
+  spawnPoint: {fileID: 0}
+  spawnRateMagnet: 0
+  spawnRateEnemy: 0
+  spawnRatePowerUp: 0
 --- !u!1 &326349756
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +800,7 @@ GameObject:
   - component: {fileID: 489827406}
   - component: {fileID: 489827405}
   - component: {fileID: 489827407}
+  - component: {fileID: 489827408}
   m_Layer: 0
   m_Name: Magnet
   m_TagString: Magnet
@@ -913,6 +920,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.424307, y: 1.4733086}
   m_EdgeRadius: 0
+--- !u!114 &489827408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489827404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca6a3d07da96cd49a20e6d348bc2765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &622752775
 GameObject:
   m_ObjectHideFlags: 0

@@ -1562,6 +1562,10 @@ PrefabInstance:
       propertyPath: rbSprite
       value: 
       objectReference: {fileID: 949862105}
+    - target: {fileID: 8717110834427848378, guid: 459b2c2c3ca72114da784eaa8d65469b, type: 3}
+      propertyPath: boostSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e74c58393abebe488070b391d2f4f65, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7488041301005950557, guid: 459b2c2c3ca72114da784eaa8d65469b, type: 3}

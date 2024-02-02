@@ -13,6 +13,7 @@ public class Boost : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindWithTag("Player");
+        Time.timeScale = 1.0f;
     }
     private void Update()
     {

@@ -15,7 +15,6 @@ public class Enemy : MonoBehaviour
     {
         player = GameObject.Find("Player");
         Time.timeScale = 1.0f;
-        
     }
     private void Update()
     {
@@ -28,7 +27,6 @@ public class Enemy : MonoBehaviour
         }
         if (timer >= stayAliveTime)
         {
-            Debug.Log("lll");
             timer = 0;
             Destroy(gameObject);
         }
