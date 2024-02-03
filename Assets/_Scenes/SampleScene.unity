@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -120}
+  m_AnchoredPosition: {x: 0, y: -186}
   m_SizeDelta: {x: 546.9, y: 186.5}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &363295422
@@ -443,7 +443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 460, y: 1052.8}
+  m_AnchoredPosition: {x: 460, y: 991}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &645084500
@@ -1410,6 +1410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagnetTimeText
       objectReference: {fileID: 0}
+    - target: {fileID: 1023182606178141774, guid: 0ea0b93d29124eb4b8389ffd26811aae, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6081107185874472855, guid: 0ea0b93d29124eb4b8389ffd26811aae, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1472,11 +1476,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6081107185874472855, guid: 0ea0b93d29124eb4b8389ffd26811aae, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 254
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 6081107185874472855, guid: 0ea0b93d29124eb4b8389ffd26811aae, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2219
+      value: -473
       objectReference: {fileID: 0}
     - target: {fileID: 6081107185874472855, guid: 0ea0b93d29124eb4b8389ffd26811aae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
