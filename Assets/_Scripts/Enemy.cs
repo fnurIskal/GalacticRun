@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
+   
     public float stayAliveTime;
     public float enemyScore;
     public float speed;
@@ -36,4 +38,5 @@ public class Enemy : MonoBehaviour
             transform.Translate(push * speed * Time.deltaTime, Space.World);
         }
     }
+   
 }

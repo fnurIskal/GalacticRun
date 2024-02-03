@@ -8,8 +8,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private SpriteRenderer rbSprite;
     [SerializeField] private GameObject pause;
     [SerializeField] private float moveSpeed;
-    //[SerializeField] public AudioClip boostSound;
-    //private AudioSource audioSource;
+    [SerializeField] public AudioSource audioSourceStar;
+   
+
     private Vector3 direction;
     public float boostScore;
     private Vector3 touchPosition;
@@ -34,15 +35,15 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
-        {
+        {  
             Destroy(gameObject);
             GameManager.Instance.HoldHighscore();
             SceneManager.LoadScene("DeadScene");
         }
         if (collision.gameObject.CompareTag("Boost"))
         {
-            //audioSource.clip = boostSound;   // çalýþmýyo bu iki kod, o yüzden boostlar yok olmuyo
-            //audioSource.Play();
+          
+           audioSourceStar.Play();
             Destroy(collision.gameObject);
             GameManager.Instance.IncreaseScore(boostScore);
         }
