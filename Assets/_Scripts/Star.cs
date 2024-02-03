@@ -15,7 +15,7 @@ public class Star : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (time >= 1.7f)
+        if (time >= 2.3f)
         {
             Destroy(gameObject);
         }

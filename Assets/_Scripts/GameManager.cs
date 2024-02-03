@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public float volume = 1f;
     public bool musicOn = true;
     public bool soundOn = true;
+    public float soundVolume = 1f;
     public void IncreaseScore(float score)
     {
         currentScore += score;
@@ -34,10 +35,6 @@ public class GameManager : MonoBehaviour
     {
         currentScore = 0f;
     }
-    public void SetVolume(float value)
-    {
-        volume = value;
-    }
     public void ChangeMusic()
     {
         musicOn = !musicOn;
@@ -45,5 +42,13 @@ public class GameManager : MonoBehaviour
     public void ChangeSound()
     {
         soundOn = !soundOn;
+    }
+    public void SoundOn()
+    {
+        soundVolume = 1f;
+    }
+    public void SoundOff()
+    {
+        soundVolume = 0f;
     }
 }

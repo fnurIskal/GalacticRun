@@ -25,7 +25,6 @@ public class StartMenuManager : MonoBehaviour
     {
         highScoreText.text = GameManager.Instance.highscore.ToString();
         volumeSlider.value = GameManager.Instance.volume;
-        volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
         if (GameManager.Instance.musicOn)
         {
             musicOn.SetActive(true);
@@ -107,8 +106,8 @@ public class StartMenuManager : MonoBehaviour
     {
         GameManager.Instance.ChangeMusic();
     }
-    private void OnVolumeChanged(float value)
+    public void Credits()
     {
-        GameManager.Instance.SetVolume(value);
+        settingsScreen.SetActive(false);
     }
 }

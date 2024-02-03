@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,13 +10,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject pause;
     [SerializeField] private float moveSpeed;
     [SerializeField] public AudioSource audioSourceStar;
-   
-
+    private bool gameStarted = false;
     private Vector3 direction;
     public float boostScore;
     private Vector3 touchPosition;
+    private void Start()
+    {
+        audioSourceStar.volume = GameManager.Instance.soundVolume;
+    }
     private void Update()
     {
+        if (Input.GetMouseButtonDown(0) && !gameStarted)
+        {
+            InvokeRepeating("GainScore", 1f, 1f);
+            gameStarted = true;
+        }
         flip();
         if (Input.touchCount > 0)
         {
@@ -42,8 +51,7 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Boost"))
         {
-          
-           audioSourceStar.Play();
+            audioSourceStar.Play();
             Destroy(collision.gameObject);
             GameManager.Instance.IncreaseScore(boostScore);
         }
@@ -55,5 +63,8 @@ public class PlayerController : MonoBehaviour
         else
             rbSprite.flipX = false;
     }
-    
+    private void GainScore()
+    {
+        GameManager.Instance.IncreaseScore(1f);
+    }
 }

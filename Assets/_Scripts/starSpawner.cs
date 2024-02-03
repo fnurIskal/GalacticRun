@@ -24,7 +24,7 @@ public class starSpawner : MonoBehaviour
 
     private void startSpawning()
     {
-        InvokeRepeating("spawnPowerup", 1f, spawnRateStar);
+        InvokeRepeating("spawnPowerup", 0f, spawnRateStar);
       
     }
     private void spawnPowerup()

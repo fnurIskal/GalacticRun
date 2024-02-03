@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour
     public bool magnet = false;
     private float timer;
     private GameObject player;
-    private bool hasScored = false;
     private float distance;
     private void Start()
     {
@@ -22,11 +21,6 @@ public class Enemy : MonoBehaviour
     {
         timer += Time.deltaTime;
         distance = Vector2.Distance(transform.position, player.transform.position);
-        if ((player.transform.position.y > transform.position.y) && !hasScored)
-        {
-            GameManager.Instance.IncreaseScore(enemyScore);
-            hasScored = true;
-        }
         if (timer >= stayAliveTime)
         {
             timer = 0;

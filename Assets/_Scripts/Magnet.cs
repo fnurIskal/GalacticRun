@@ -5,12 +5,16 @@ using UnityEngine;
 
 public class Magnet : MonoBehaviour
 {
+    [SerializeField] public AudioSource audioSource;
     [SerializeField] private int magnetTime;
     [SerializeField] private GameObject magnetText;
     private int count = 0;
     private GameObject[] boosts;
     private GameObject[] enemies;
-
+    private void Start()
+    {
+        audioSource.volume = GameManager.Instance.soundVolume;
+    }
     private void Update()
     {
         transform.Rotate(0f, 100 * Time.deltaTime, 0f, Space.Self);
@@ -20,6 +24,7 @@ public class Magnet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            audioSource.Play();
             magnetText = GameObject.Find("MagnetTimeText");
             magnetText.GetComponent<MagnetText>().ActivatePowerup();
             gameObject.GetComponent<SpriteRenderer>().enabled = false;

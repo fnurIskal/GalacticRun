@@ -6,7 +6,7 @@ public class MagnetText : MonoBehaviour
 {
     public TextMeshProUGUI magnetTimeText;
     public bool isPowerupActive = false;
-    private float powerupDuration = 30f;
+    private float powerupDuration = 15f;
     private float timer;
     void Update()
     {

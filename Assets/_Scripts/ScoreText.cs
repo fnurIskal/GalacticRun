@@ -6,6 +6,6 @@ public class ScoreText : MonoBehaviour
     public TextMeshProUGUI scoreText;
     void Update()
     {
-        scoreText.text = GameManager.Instance.currentScore.ToString();
+        scoreText.text = Mathf.RoundToInt(GameManager.Instance.currentScore).ToString();
     }
 }

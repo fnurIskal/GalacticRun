@@ -64,4 +64,12 @@ public class ManageScene : MonoBehaviour
     {
         SceneManager.LoadScene("StartMenu");
     }
+    public void SetVolume()
+    {
+        AudioListener.volume = 0f;
+    }
+    public void ResetVolume()
+    {
+        AudioListener.volume = GameManager.Instance.volume;
+    }
 }
