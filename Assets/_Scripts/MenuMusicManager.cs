@@ -9,4 +9,8 @@ public class MenuMusicManager : MonoBehaviour
     {
         audioSource.volume = GameManager.Instance.volume;
     }
+    private void Update()
+    {
+        audioSource.volume = GameManager.Instance.volume;
+    }
 }

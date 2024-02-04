@@ -146,7 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf4e3de8fce20e4287307a081c026ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 8324292885822185993}
   stayAliveTime: 3
   enemyScore: 1
   speed: 5

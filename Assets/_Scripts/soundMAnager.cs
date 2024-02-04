@@ -28,7 +28,6 @@ public class soundMAnager : MonoBehaviour
     {
         GameManager.Instance.volume = volumeSlider.value;
     }
-
     public void Stop()
     {
         audioSource.Stop();

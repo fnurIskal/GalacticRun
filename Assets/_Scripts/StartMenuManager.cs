@@ -21,6 +21,7 @@ public class StartMenuManager : MonoBehaviour
     public GameObject magnet;
     public GameObject highscore;
     public Slider volumeSlider;
+    private float tempValue;
     private void Start()
     {
         highScoreText.text = GameManager.Instance.highscore.ToString();
@@ -98,13 +99,26 @@ public class StartMenuManager : MonoBehaviour
         highscore.SetActive(true);
         settingsScreen.SetActive(false);
     }
-    public void Sound()
+    public void SoundOn()
     {
         GameManager.Instance.ChangeSound();
+        GameManager.Instance.soundVolume = 1f;
     }
-    public void Music()
+    public void SoundOff()
+    {
+        GameManager.Instance.ChangeSound();
+        GameManager.Instance.soundVolume = 0f;
+    }
+    public void MusicOn()
     {
         GameManager.Instance.ChangeMusic();
+        GameManager.Instance.volume = tempValue;
+    }
+    public void MusicOff()
+    {
+        GameManager.Instance.ChangeMusic();
+        tempValue = GameManager.Instance.volume;
+        GameManager.Instance.volume = 0f;
     }
     public void Credits()
     {
